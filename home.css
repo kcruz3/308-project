@@ -1,0 +1,153 @@
+/* === GLOBAL RESET & BASE STYLES === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* === HEADER === */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* === NAVIGATION TOGGLE === */
+#nav-toggle {
+    display: none;
+}
+
+.nav-button {
+    background-color: #00509e;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* === NAVIGATION MENU === */
+.nav-menu {
+    background-color: #e9eef4;
+    border-radius: 6px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    margin: 10px auto;
+    width: 95%;
+}
+
+#nav-toggle:checked + .nav-button + .nav-menu {
+    max-height: 600px;
+    padding: 15px 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #00509e;
+}
+
+/* === MAIN CONTENT SECTIONS === */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    font-size: 1.6rem;
+    color: #003366;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
+section h3 {
+    font-size: 1.3rem;
+    color: #004080;
+    margin: 25px 0 10px;
+}
+
+/* === UL LIST FOR BENEFITS === */
+section ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ul li {
+    margin-bottom: 12px;
+    padding-left: 12px;
+    position: relative;
+    line-height: 1.5;
+}
+
+/* === TABLE STYLES === */
+table.five-year-plan {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table.five-year-plan th,
+table.five-year-plan td {
+    padding: 12px 14px;
+    border: 1px solid #d6d6d6;
+    text-align: center;
+}
+
+table.five-year-plan th {
+    background-color: #e6f0ff;
+    color: #003366;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    background: #f0f0f0;
+    margin-top: 40px;
+}
