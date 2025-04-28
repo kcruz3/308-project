@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="utf-8">
-<title>Technical and Contact Support </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">   
+    <title>Technical and Contact Support</title>
 </head>
 <body>
 
-<h1> Contact Information </h1>
-<p> Listed below is the contact information for the directors of engineering for both institutions. </p>
-<h2>Saint Mary's College Engineering Director</h2>
-<p>
-Name: Kristin Kuter
-Email:kjehring@saintmarys.edu
-Phone:574-284-445
-</p>
+<header>
+    <h1>Contact Information</h1>
+    <input type="checkbox" id="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-button">☰ Menu</label>
 
-<h2>Notre Dame Engineering Director</h2>
-<p>
-Name: Andrew Bartolini
-Email:abartoli@nd.edu
-Phone:574-631-665
-</p>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="home.html">Program Overview</a></li>
+            <li><a href="degree-planning.html">Degree Planning</a></li>
+            <li><a href="advising-support.html">Advising and Support</a></li>
+            <li><a href="portfolio_projects_writing_requirements.html">Portfolio, Projects, and Writing Resources</a></li>
+            <li><a href="#app">Engineering Transition and Application Support</a></li>
+            <li><a href="#intern">Career and Internship Resources</a></li>
+            <li><a href="technical_contact_support.html">Technical and Contact Support</a></li>
+        </ul>
+    </nav>
+</header>
 
-<h1> Submit Your Feedback</h1>
+<main>
+    <p>Listed below is the contact information for the directors of engineering for both institutions.</p>
 
-<form action = "malito:your-email@example.com" method="post" enctype="text/plain">
-<label for="name">Name</label>
-<input type="text" id="name" name="name" required><br><br>
-<label for="feedback" name="feedback" rows="6" required></textarea><br><br>
-<button type="submit">Send Feedback</button>
-</form>
-</form>
+    <h2>Saint Mary's College Engineering Director</h2>
+    <p>
+        Name: Kristin Kuter<br>
+        Email: <a href="mailto:kjehring@saintmarys.edu">kjehring@saintmarys.edu</a><br>
+        Phone: 574-284-445
+    </p>
+
+    <h2>Notre Dame Engineering Director</h2>
+    <p>
+        Name: Andrew Bartolini<br>
+        Email: <a href="mailto:abartoli@nd.edu">abartoli@nd.edu</a><br>
+        Phone: 574-631-665
+    </p>
+
+    <h1 id="submit">Submit Your Feedback</h1>
+
+    <form action="mailto:kcruz01@saintmarys.edu" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="Name" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="Subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="Message" rows="6" required></textarea><br><br>
+
+        <button type="submit">Send Feedback</button>
+    </form>
+</main>
+
 <footer>
- <p>&copy; 2025 Saint Mary’s College & University of Notre Dame. All rights reserved.</p>
+    <p>&copy; 2025 Saint Mary’s College & University of Notre Dame. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
