@@ -236,24 +236,3 @@ main h2 {
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 }
-
-/* === FAQ Accordion (if needed later) === */
-dl {
-    margin-top: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-dt {
-    font-style: italic;
-    font-weight: bold;
-    color: #003366;
-    margin-top: 15px;
-}
-
-dd {
-    margin-left: 20px;
-    margin-bottom: 15px;
-    color: #333;
-}
